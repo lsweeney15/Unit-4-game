@@ -1,0 +1,71 @@
+.jumbotron {
+    background-image: url(/assets/images/Background.png);
+    background-size: cover;
+    
+  }
+  
+  .jumbotron h1 {
+    color: #000;
+    text-shadow: 3px 3px #fff;
+  
+  }
+  
+  .instructions {
+    text-align: center; 
+  }
+  
+  body {
+    font-size: 16;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 24;
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20;
+    color: black;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.crystal-image {
+    width: 300px;
+    height: 300px;
+}
+
+#randomNumber {
+    font-size: 30;
+    color: red;
+}
+
+img {
+    width: 100px;
+    border: 1px solid, gray;
+}
+
+.blue {
+    display: inline-block;
+}
+
+.pink {
+    display: inline-block;
+}
+
+.yellow {
+    display: inline-block;
+}
+
+.green {
+    display: inline-block;
+}
+
+.container {
+    text-align: center;
+}
