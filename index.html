@@ -3,47 +3,77 @@
 
 <head>
     <title>Crystal Collector</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    <!-- Latest compiled and minified CSS (Bootstrap) -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Optional theme (Bootstrap) -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Great+Vibes|Jura|Orbitron|Play|Rouge+Script"
+        rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="jumbotron text-center">
-    <h1>Crystal Collector</h1></div>
-
-    <h2>How to Play:</h2>
-
-    <p>You will be given a random number at the start of the game.</p>
-    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-    <p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the
-        random number.</p>
-    <p>This value of each crystal is hidden from you until you click on it.</p>
-    <p>Each time the game starts, the game will change the values of each crystal.</p>
-
-    <p>Your number to match:
-        <span id= "randomNumber"></span>
-    </p>
-
-    <p>Wins:
-        <span id= "wins"></span>
-    </p>
-
-    <p>Losses:
-        <span id= "losses"></span>
-    </p>
-
-    <p>Your total score is:
-        <span id= "finalTotal"></span>
-    </p>
-
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-12"></div>
+                <h1>CRYSTAL COLLECTOR</h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <id="instructions">
+                                <h2>How to Play:</h2>
+                                <p> Each crystal has a hidden value.</p>
+                                <p>Each time you click, that value will be added to your total score.</p>
+                                </p>If your score matches the magic number you are a winner. </p>
+                                </p>If you exceed the magic number, you are a loser.</p>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="matchLine">
+                    <p>YOUR NUMBER TO MATCH:</p>
+                    <div id="randomNumber">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="crystalRow">
                     <img src="assets/images/BlueCrystal.png" alt="Blue Crystal" class="blue">
                     <img src="assets/images/YellowCrystal.png" alt="Yellow Crystal" class="yellow">
                     <img src="assets/images/PinkCrystal.png" alt="Pink Crystal" class="pink">
@@ -52,8 +82,31 @@
             </div>
         </div>
     </div>
-    <script language="JavaScript" type="text/javascript" script src="assets/javascript/game.js">
-    </script>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="scoreLine">
+                    <p>YOUR TOTAL SCORE IS:</p>
+                        <div id="finalTotal"></div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><div id="scoreLine">
+                    <p>Wins:
+                        <span id="wins"></span>
+                    </p>
+                    <p>Losses:
+                        <span id="losses"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script language="JavaScript" type="text/javascript" script src="assets/javascript/game.js">
+        </script>
 
 </body>
 

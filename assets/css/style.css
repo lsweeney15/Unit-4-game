@@ -1,69 +1,83 @@
-.jumbotron {
-    background-image: url(/assets/images/Background.png);
-    background-size: cover;
-    
-  }
-  
-  .jumbotron h1 {
-    color: #000;
-    text-shadow: 3px 3px #fff;
-  
-  }
-  
-  .instructions {
-    text-align: center; 
-  }
-  
-  body {
-    font-size: 16;
+body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/Background.png");
+    background-repeat: no-repeat;
+  }
+
+#instructions {
+    text-align: center;
+    margin: auto;
 }
 
 h1 {
-    font-size: 24;
+    font-size: 200px;
     color: black;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-size: 20;
+    font-size: 60px;
     color: black;
     text-align: center;
 }
 
-p {
-    text-align: center;
+.numberRow {
+font-size: 26px;
+height: 200px;
 }
 
-.crystal-image {
-    width: 300px;
-    height: 300px;
+#finalTotal {
+    font-size: 43px;
 }
 
 #randomNumber {
-    font-size: 30;
-    color: red;
+    font-size: 80px;
+    color: #2b97d2;
+}
+
+#outcome {
+    font-size: 30px;
+    color: #2b97d2;
 }
 
 img {
     width: 100px;
-    border: 1px solid, gray;
+    margin: 0 40px;
+}
+
+#scoreLine {
+    font-size: 24px;
+    color: #2b97d2;
+}
+
+#matchLine {
+color: #2b97d2;
+margin-top: 24px;
+}
+
+#crystalRow {
+margin-bottom: 60px;
 }
 
 .blue {
     display: inline-block;
+    border: 1px solid #2b97d2;
 }
 
 .pink {
     display: inline-block;
+    border: 1px solid #2b97d2;
 }
 
 .yellow {
     display: inline-block;
+    border: 1px solid #2b97d2;
 }
 
 .green {
     display: inline-block;
+    border: 1px solid #2b97d2;
 }
 
 .container {

@@ -1,12 +1,9 @@
-$(document).ready(function () {
+$(document).ready(function() {
 });
 
 // generate random number between 19-120
-var randomNumber = Math.floor((Math.random() * 120) + 19);
+var randomNumber = Math.floor(Math.random() * 120 + 19);
 console.log(randomNumber); // test 
-
-var x = Math.floor((Math.random() * 10) + 1);
-
 
 $('#randomNumber').text(randomNumber);
 
@@ -16,25 +13,24 @@ var wins = 0;
 var losses = 0;
 
 // Random number between 1 - 12
-var blue = Math.floor((Math.random() * 12) + 1);
-var yellow = Math.floor((Math.random() * 12) + 1);
-var pink = Math.floor((
-    Math.random() * 12) + 1);
-var green = Math.floor((Math.random() * 12) + 1);
+var blue = Math.floor(Math.random() * 12 + 1);
+var yellow = Math.floor(Math.random() * 12 + 1);
+var pink = Math.floor(Math.random() * 12 + 1);
+var green = Math.floor(Math.random() * 12 + 1);
 
 $('#wins').text(wins);
 $('#losses').text(losses);
 
 //resets the game
 function reset() {
-    randomNumber = Math.floor(Math.random() * 121 + 19);
+    randomNumber = Math.floor(Math.random() * 120 + 19);
     console.log(randomNumber) // test
     $('#randomNumber').text(randomNumber);
-    blue = Math.floor(Math.random() * 13 + 1);
-    yellow = Math.floor(Math.random() * 13 + 1);
-    pink = Math.floor(Math.random() * 13 + 1);
-    green = Math.floor(Math.random() * 13 + 1);
-    yourScore = 0;
+    blue = Math.floor(Math.random() * 12 + 1);
+    yellow = Math.floor(Math.random() * 12 + 1);
+    pink = Math.floor(Math.random() * 12 + 1);
+    green = Math.floor(Math.random() * 12 + 1);
+    playerTotal = 0;
     $('#finalTotal').text(playerTotal);
 }
 
